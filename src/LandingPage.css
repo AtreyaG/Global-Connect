@@ -107,3 +107,11 @@
 .connections-link:hover{
     background: #a5f3a5
 }
+
+/* styling for other connections page stuff since it may be later moved to a layout.css file if we make the layout a component*/
+.page-title {
+    margin:0;
+    padding: 16px 24px;
+    font-size: 1.25rem;
+    border-bottom: 1px solid #eae5ee
+}

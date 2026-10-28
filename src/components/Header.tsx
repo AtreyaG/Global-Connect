@@ -1,21 +1,24 @@
 import {MdSearch, MdOutlineHome} from 'react-icons/md'
 import { BsGlobe } from 'react-icons/bs'
+import { Link } from 'react-router'
 
 function Header() {
     return(
         <header className="header">Global-Connect
             <div className="search-bar">
                 <input type="text" placeholder='Search recruiters and jobs'/>
-                <MdSearch size={20} />
+                <Link to="/" className="home-link">
+                    <MdSearch size={20} />
+                </Link>
             </div>
 
-            <a href="/" className='home-link'>
+            <Link to="/" className="home-link">
                 <MdOutlineHome size={32} />
-            </a>
+            </Link>
 
-            <a href='/connections' className="connections-link">
+            <Link to="/connections" className="connections-link">
                 Connections <BsGlobe size={28} />
-            </a>
+            </Link>
         </header>
     )
 }
