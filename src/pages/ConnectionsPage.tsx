@@ -9,7 +9,9 @@ function ConnectionsPage() {
         <Sidebar name="Avatar" title="Student at University of Texas at Dallas" />
         <div className="main">
             <Header />
-            <main className="connections-list">ConnectionsList</main>
+            <main className="content">
+                <h1 className="page-title">Connections</h1>
+            </main>
         </div>
     </div>
     )
