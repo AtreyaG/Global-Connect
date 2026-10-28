@@ -1,24 +1,65 @@
-.layout 
-    { 
-    display: grid; grid-template-columns: 240px 1fr; height: 100vh; 
+/* main page related styling */
+.layout{ 
+    display: grid; 
+    grid-template-columns: 240px 1fr; 
+    height: 100vh; 
+}
+
+
+/* dashbaord content related styling */
+.main{  
+    display: flex; 
+    flex-direction: column; 
+}
+
+.connections-list { 
+    flex: 1; 
+    overflow-y: auto; 
+}
+
+
+/* sidebar related styling */
+.sidebar { 
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background: #3daf6c; 
+    color: white; 
+}
+
+.profile{
+    padding: 56px 40px 0;
+}
+
+.profile h2 {
+        margin: 24px 0 8px;
     }
 
-.main   
-    {  
-    display: flex; flex-direction: column; 
-    }
+.profile p {
+    margin:0;
+}
 
-.connections-list 
-    { 
-    flex: 1; overflow-y: auto; 
-    }
+.sidebar-nav {
+    margin-top: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 0 4px 4px;
+}
 
-.sidebar 
-    { 
-    background: #3daf6c; color: white; 
-    }
+.sidebar-nav button{
+    width: 100%;
+    padding:8px;
+    border: none;
+    border-top: 2px solid white;
+    background: none;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
-.header 
-    { 
-    height: 56px; background: #d9d9d9; 
-    }
+
+/* header related styling */
+.header { 
+    height: 56px; 
+    background: #d9d9d9; 
+}
