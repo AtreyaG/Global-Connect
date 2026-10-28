@@ -8,10 +8,10 @@ import { BrowserRouter, Routes, Route } from 'react-router'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/Global-Connect">
       <Routes>
-        <Route path="/Global-Connect" element={<LandingPage />} />
-        <Route path="/Global-Connect/connections" element={<ConnectionsPage />} />
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/connections" element={<ConnectionsPage />} />
       </Routes>
     </BrowserRouter>
   </StrictMode>,
