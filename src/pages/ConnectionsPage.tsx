@@ -22,9 +22,9 @@ function ConnectionsPage() {
                 <h1 className="page-title">Connections</h1>
                 
                 {/* Mapping logic to map out all the names from the connections list about */}
-                <ul className="connections-list">
+                <ul className="connections-display">
                     {connections.map((connection) =>(
-                        <li key={connections.id} className="connection-row">
+                        <li key={connection.id} className="connection-row">
                             <FaUserCircle size={48} color="#cfcdcd" />
                             <div className="connection-info">
                                 <p className="connection-name">{connection.name}</p>
