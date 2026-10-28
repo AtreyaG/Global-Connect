@@ -1,8 +1,15 @@
 
+import './LandingPage.css'
 
 function LandingPage() {
     return(
-    <h1>Landing Page Text</h1>
+    <div className="layout">
+        <aside className="sidebar">SideBarHere</aside>
+        <div className="main">
+            <header className="header">Header</header>
+            <main className="connections-list">ConnectionsList</main>
+        </div>
+    </div>
     )
 }
 

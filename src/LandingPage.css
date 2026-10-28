@@ -1,0 +1,24 @@
+.layout 
+    { 
+    display: grid; grid-template-columns: 240px 1fr; height: 100vh; 
+    }
+
+.main   
+    {  
+    display: flex; flex-direction: column; 
+    }
+
+.connections-list 
+    { 
+    flex: 1; overflow-y: auto; 
+    }
+
+.sidebar 
+    { 
+    background: #3daf6c; color: white; 
+    }
+
+.header 
+    { 
+    height: 56px; background: #d9d9d9; 
+    }
